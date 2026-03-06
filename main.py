@@ -1,11 +1,12 @@
 """Ushbu dastur main ni bajaradi"""
 from asyncio import run
-import message
 
 
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 
+
+import message
 
 from config import TOKEN
 dp = Dispatcher()
@@ -16,7 +17,7 @@ async def startup_answer(bot: Bot):
     await bot.send_message(2132289405, "Bot ishga tushdi! ✅")
 
 async def shutdown_answer(bot: Bot):
-    """ushbu funcsiya bot ishga tushsa habarni yuboradi"""
+    """ushbu funcsiya bot ishdan to'xtasa habarni yuboradi"""
     await bot.send_message(2132289405, "Bot ishdan to'xtadi! ❗")
 
 

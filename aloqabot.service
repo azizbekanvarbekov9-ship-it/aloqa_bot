@@ -1,0 +1,13 @@
+[Unit]
+Description=aloqabot
+
+[Service]
+User=root
+WorkingDirectory=/home/projects/aloqabot
+ExecStart=/bin/bash -c 'cd /home/projects/aloqabot && python3 main.py'
+optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
